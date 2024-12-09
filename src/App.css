@@ -37,3 +37,99 @@ body {
     background-color: darkorange;
 
 }
+
+.add-btn{
+    border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        background-color:palevioletred;
+        padding: 12px;
+        margin-left:50%;
+        width: auto;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        justify-content: flex-end;
+}
+
+.add-btn:hover {
+    background-color:pink ;
+
+}
+
+
+
+.add-item-form {
+    max-width: 500px;
+    /* Limit the form's width */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    /* Space between form groups */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    /* Align label and input vertically */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    /* Ensure inputs span full width */
+    box-sizing: border-box;
+    /* Include padding in width */
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-container {
+    text-align: right;
+}
+
+.add-btn {
+    padding: 12px;
+    margin-top: 5px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: lightgreen;
+}
