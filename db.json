@@ -1,0 +1,44 @@
+{
+  "Item": [
+    {
+      "id": 1,
+      "productName": "Sugar",
+      "category": "Sweet",
+      "unit": "1Kg",
+      "price": "124",
+      "discount": "10",
+      "stockQuantity": "12Kg",
+      "expirationDate": "01/01/2025"
+    },
+    {
+      "id": 2,
+      "productName": "Lax",
+      "category": "Soap",
+      "unit": "1",
+      "price": "55",
+      "discount": "2",
+      "stockQuantity": "50",
+      "expirationDate": "2025-01-31"
+    },
+    {
+      "id": 3,
+      "productName": "signal",
+      "category": "paste",
+      "unit": "1",
+      "price": "35",
+      "discount": "3",
+      "stockQuantity": "10",
+      "expirationDate": "2024-12-27"
+    },
+    {
+      "id": 4,
+      "productName": "Onion biscuit",
+      "category": "Biscuit",
+      "unit": "packet",
+      "price": "110",
+      "discount": "10",
+      "stockQuantity": "5",
+      "expirationDate": "2024-12-28"
+    }
+  ]
+}

@@ -2,11 +2,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 25px;
     background-color: #ffffff;
@@ -15,60 +15,82 @@ body {
     border-top: 5px solid grey;
 }
 
-.container h1{
+.container h1 {
     text-align: center;
     color: darkgreen;
 }
 
-.btn{
+/* Common button styles */
+.btn {
     border: none;
     color: white;
     font-weight: bold;
+    text-decoration: none;
     font-size: 16px;
-    background-color: coral;
     padding: 12px 20px;
     width: auto;
     border-radius: 8px;
-    cursor:pointer;
+    cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
+.btn-add,.btn-add-item{
+    background-color: coral;
+
+}
 .btn:hover {
     background-color: darkorange;
-
+}
+.btn-add-item:hover {
+    background-color: darkorange;
 }
 
-.add-btn{
-    border: none;
-        color: white;
-        font-weight: bold;
-        font-size: 16px;
-        background-color:palevioletred;
-        padding: 12px;
-        margin-left:50%;
-        width: auto;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        justify-content: flex-end;
+/* Specific styles for add buttons */
+.btn-add {
+    margin-left: 5%;
+    justify-content: flex-end;
 }
-
-.add-btn:hover {
-    background-color:pink ;
-
+/* Specific styles for add item buttons */
+.btn-add-item {
+    margin-top: 5px;
+    margin-left: 60%;
+   
 }
 
 
+/*Action button*/
+.btn-action {
+    margin: 5px;
+}
+.btn-delete {
+    background-color: #FF7074;
+}
+.btn-view{
+   background-color:#9FE2BF;
+}
+.btn-edit {
+   background-color: #5F8575;
+}
+.btn-back{
+    margin-left: 11px;
+background-color: #5f7685;
+}
 
+.btn-back:hover {
+    background-color: rgb(159, 157, 155);
+}
+
+/* Form container */
 .add-item-form {
     max-width: 500px;
-    /* Limit the form's width */
     margin: 0 auto;
-    /* Center the form horizontally */
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-top: 5px solid grey;
 }
 
 h2 {
@@ -81,13 +103,11 @@ form {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    /* Space between form groups */
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    /* Align label and input vertically */
 }
 
 label {
@@ -102,9 +122,7 @@ label {
     border-radius: 4px;
     font-size: 16px;
     width: 100%;
-    /* Ensure inputs span full width */
     box-sizing: border-box;
-    /* Include padding in width */
 }
 
 .form-input:focus {
@@ -113,23 +131,70 @@ label {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.btn-container {
-    text-align: right;
-}
-
-.add-btn {
-    padding: 12px;
-    margin-top: 5px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 8px;
+/*table-----------------------------------------------*/
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /* Ensures no spacing between cells */
     font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+
 }
 
-.add-btn:hover {
-    background-color: lightgreen;
+.styled-table thead tr {
+    border: 3px solid grey;
+    /* Add outer border for the header row */
+}
+
+.styled-table th {
+    padding: 12px 15px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    /* Apply border only to headers */
+}
+
+
+.styled-table td {
+    padding: 12px 15px;
+    /* Keep padding for consistency */
+    border: none;
+    /* Ensure no border for table data cells */
+}
+
+.err{
+color: red;
+font-size: small;
+font-style: italic;
+}
+
+
+/*view-----------------------------------------------*/
+
+.view_details-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /* Ensures no spacing between cells */
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+ 
+}
+
+.view_details-table td {
+    padding: 12px 80px;
+    /* Keep padding for consistency */
+    border: none;
+    /* Ensure no border for table data cells */
+}
+.btn-back-view {
+    margin-top: 30px;
+    margin-left: 68%;
+    background-color: #5f7685;
+
 }

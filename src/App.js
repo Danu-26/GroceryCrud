@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import GroceryDetails from "./GroceryDetails";
+import Home from "./Home";
 import AddItem from "./AddItem";
 import EditItem from "./EditItem";
 import ViewItem from "./ViewItem";
@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<GroceryDetails />}></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/farm/additem" element={<AddItem />}></Route>
-          <Route path="/farm/edit/:id" element={<EditItem />} />
-          <Route path="/farm/viewitem/:id" element={<ViewItem />} />
+          <Route path="/farm/edit/:id" element={<EditItem />}></Route>
+          <Route path="/farm/view/:id" element={<ViewItem />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
